@@ -1,0 +1,67 @@
+body{
+	background: #F7F68A;
+	text-align: center;
+	font-size: 200%;
+	color: #CB4B1F;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	height: 100%;
+	position: absolute;
+	width: 100%
+}
+
+body > * {
+	margin: auto;
+}
+
+.hamburgler{
+	width: 300px;
+	height: 300px;
+	display: block;
+	-webkit-transition: .3s ease all;
+	transition: .3s ease all;
+}
+
+.hamburgler.no-hamburgler{
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg)
+}
+
+.bun, .meat{
+	display: block;
+	width: 100%;
+	background: #93A2B5;
+	height: 20%;
+	-webkit-transition: .3s ease all;
+	transition: .3s ease all;
+	border-radius: 50px;
+}
+
+.no-hamburgler .top{
+	height: 38%;
+	width: 20%;
+	margin-left: 40%;
+	border-radius: 50px 50px 0 0;
+}
+
+.no-hamburgler .bottom{
+	height: 38%;
+	width: 20%;
+	margin-left: 40%;
+	border-radius: 0 0 50px 50px;
+}
+
+.meat{
+	margin: 20% 0;
+}
+
+.no-hamburgler .meat{
+	margin: 2% 0;
+}

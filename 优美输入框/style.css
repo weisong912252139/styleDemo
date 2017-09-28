@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen:400,700');
+body{
+	background-color: #D5DFE5;
+	font-family:'Oxygen';
+}
+.field{
+	display: flex;
+	position:relative;
+	margin:5em auto;
+	width: 50%;
+	flex-direction:row;
+	box-shadow:
+	    1px 1px 0 #6174a8,
+		2px 2px 0 #6174A8,
+		3px 3px 0 #6174A8,
+		4px 4px 0 #6174A8,
+		5px 5px 0 #6174A8,
+		6px 6px 0 #6174A8,
+		7px 7px 0 #6174A8
+}
+.field>input[type=text]{
+	flex: 1;
+	padding: 0.6em;
+	border: 0.2em solid #7B8BB7;
+	font-style: italic;
+	font-size: 16px;
+}
+.field>button{
+	padding: 0.6em 0.8em;
+	background-color: #7B8BB7;
+	color: white;
+	border: none;
+	font-size: 16px;
+	font-weight: bold;
+	cursor: pointer;
+}
+.field>input[type=text]:focus,.field>button{
+	outline: none;
+}

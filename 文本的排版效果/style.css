@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo:400,700');
+
+body{
+	font-family: 'Arimo';
+	line-height: 1.5;
+	margin: 0;
+}
+
+.row{
+	/* set the display to flex so that all of the items within the div will line up in a neat row */
+	display: flex;
+	color: #fff;
+	margin-top: 100px;
+}
+
+.column{
+	cursor: pointer;
+	display: inline-block;
+	font-size: 1rem;
+	font-weight: 200;
+	padding: 6em 0;
+	text-align: center;
+	/* we should add some easing to make for a nice transition on hover */
+	transition: transform .1s ease-in;
+	width: 33.3%;
+	z-index: 1;
+}
+
+.column p{
+	margin: 0 auto;
+	width: 80%;
+}
+
+.column:hover{
+	/* the transform property allows us to increase a column's scale when it's hovered upon */
+	transform: scale(1.3);
+	z-index: 2;
+}
+
+.column-orange{
+	background: rgba(255, 173, 51, .8);
+	margin-left: 100px;
+}
+
+.column-purple{
+	background: rgba(153, 153, 255, .8);
+}
+
+.column-pink{
+	background: rgba(255, 179, 179, .8);
+	margin-right: 100px;
+}

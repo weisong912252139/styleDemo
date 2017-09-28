@@ -1,0 +1,21 @@
+@keyframes filling{
+	from{
+		background-position: center 10%;
+	}
+	/*50%{background-position: center 100%;}*/
+	to{
+		background-position: center 50%;
+	}
+}
+
+.container-text{
+	background-image: url(../../images/16.jpg);
+	/*background: red;*/
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+	color: #fff;
+	padding-top: 20px;
+	font-size: 170px;
+	font-family: 'Impact', sans-serif;
+	animation: filling 3s ease forwards;
+}
